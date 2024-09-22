@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos & Registros</title>
+    <link rel="icon" href="/img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <section id="menu">
+          <img src="img/logo1.png" alt="logo" class="logo" />
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html" class="press">Registro</a></li>
+            <li><a href="#">Acerca De</a></li>
+          </ul>
+          <hr />
+        </section>
+    </nav>
+    <section>
+        <img src="/img/banner.jpg" alt="banner de Gastos y Registros" class="banner">
+    </section>
+    <section>
+        <main>
+            <!--SUSCRÍBETE-->
+            <section>
+                <h3>Haz parte de nuestra comunidad</h3>
+                <p>Ingresa tus datos.</p>
+            </section>
+        
+            <section class="contenedor-suscribete">
+                <div class="form-suscribete">
+                    <h3 class="titulo-suscribete">Registrate</h3>
+        
+                    <form action="" class="datos-form-inscrip">
+                        <!-- Nombre -->
+                        <p><label for="nombre_form">Nombre completo</label></p>
+                        <input
+                          class="text-area-form"
+                          type="text"
+                          name="nombre"
+                          id="nombre_form"
+                          placeholder="Nombre completo"
+                          required
+                        />
+        
+                        <!-- Tipo de documento -->
+                        <p><label for="tipo_id_form">Tipo de documento</label></p>
+                        <select name="tipo_id" id="tipo_id_form" class="text-area-form" required>
+                          <option value="" disabled selected>Selecciona el tipo de documento</option>
+                          <option value="CC">Cédula de ciudadanía</option>
+                          <option value="Pasaporte">Pasaporte</option>
+                          <option value="TE">Tarjeta de extranjería</option>
+                          <option value="RC">Registro civil</option>
+                          <option value="CE">Cédula de extranjería</option>
+                        </select>
+        
+                        <!-- Número de documento -->
+                        <p><label for="id_form">Número de documento</label></p>
+                        <input
+                          class="text-area-form"
+                          type="number"
+                          name="id"
+                          id="id_form"
+                          placeholder="Número de documento"
+                          min="0"
+                          required
+                        />
+        
+                        <!-- Edad -->
+                        <p><label for="edad_form">Edad</label></p>
+                        <input
+                          class="text-area-form"
+                          type="number"
+                          name="edad"
+                          id="edad_form"
+                          min="18"
+                          max="100"
+                          placeholder="Edad (18+)"
+                          required
+                        />
+        
+                        <!-- Correo -->
+                        <p><label for="correo_form">Correo electrónico</label></p>
+                        <input
+                          class="text-area-form"
+                          type="email"
+                          name="correo"
+                          id="correo_form"
+                          placeholder="correo@dominio.com"
+                          required
+                        />
+        
+                        <!-- Método de pago preferido -->
+                        <p><label for="metodo_pago_form">Método de pago preferido</label></p>
+                        <select name="metodo_pago" id="metodo_pago_form" class="text-area-form" required>
+                          <option value="" disabled selected>Selecciona un método de pago</option>
+                          <option value="credito">Tarjeta de crédito</option>
+                          <option value="debito">Tarjeta débito</option>
+                          <option value="transferencia">Transferencia</option>
+                        </select>
+        
+                        <!-- Descripción -->
+                        <p><label for="descripcion_form">Descripción</label></p>
+                        <textarea
+                          name="descripcion"
+                          id="descripcion_form"
+                          cols="35"
+                          rows="10"
+                          placeholder="Ingresa una breve descripción de tus objetivos con nuestra plataforma"
+                          spellcheck="true"
+                          class="text-area-form"
+                          required
+                        ></textarea>
+        
+                        <br />
+                        <input
+                          type="submit"
+                          value="Enviar Registro"
+                          class="boton-registro"
+                        />
+                    </form>
+                </div>
+        
+                <!-- SECCIÓN INICIO DE SESIÓN -->
+                <div class="form-iniciesesion">
+                    <h3 class="titulo-iniciesesion">Inicia Sesión</h3>
+        
+                    <form action="" class="datos-form-inicio">
+                        <!-- Correo electrónico -->
+                        <p><label for="correo_iniciosesion_form">Correo electrónico</label></p>
+                        <input
+                          class="text-area-insesion"
+                          type="email"
+                          name="correo_iniciosesion"
+                          id="correo_iniciosesion_form"
+                          placeholder="Correo electrónico"
+                          required
+                        />
+        
+                        <!-- Contraseña -->
+                        <p><label for="contrasena_form">Contraseña</label></p>
+                        <input
+                          class="text-area-insesion"
+                          type="password"
+                          name="contrasena"
+                          id="contrasena_form"
+                          placeholder="Contraseña"
+                          required
+                        />
+        
+                        <br />
+                        <a href="#" class="olvid-contras">¿Olvidaste tu contraseña?</a>
+                        <input
+                          type="submit"
+                          value="Iniciar Sesión"
+                          class="boton-registro"
+                        />
+                    </form>
+                </div>
+            </section>
+        </main>
+    </section>
+    <section> 
+      <footer id="caja-footer">
+          <img src="img/logo1.png" alt="" class="logo" />
+          <section class="contenedor-footer">
+            <ul>
+              <li class="textos-footer">Contáctanos</li>
+              <li class="textos-footer">Información legal</li>
+              <li class="textos-footer">Términos y condiciones de uso</li>
+              <li class="textos-footer">Política de privacidad</li>
+            </ul>
+          </section>
+          <section class="contenedor-footer2">
+            <ul>
+              <li class="textos-footer">Instagram</li>
+              <li class="textos-footer">Facebook</li>
+            </ul>
+          </section>
+          <section class="contenedor-footer2">
+            <ul>
+              <li class="textos-footer">Integrantes</li>
+              <li class="textos-footer">Maria Paula Escobar</li>
+              <li class="textos-footer">Laura Medina C.</li>
+            </ul>
+          </section>
+          <p>© Desarrollado por EMP & LMC</p>
+        </footer>
+    </section>
+</body>
+</html>
